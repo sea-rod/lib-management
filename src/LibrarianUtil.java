@@ -1,7 +1,9 @@
 import java.util.Scanner;
 
 public class LibrarianUtil extends User implements Books  {
-
+    LibrarianUtil(){
+        //add bboks
+    }
         
     void addBook(){
         Scanner scn = new Scanner(System.in);

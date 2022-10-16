@@ -1,5 +1,5 @@
 // import java.util.Scanner;
-public class Student extends Login {
+public class Student extends Utils {
     Student(){
         System.out.println("```````````````````````````````````````````````````````````````````````````````````");
         System.out.println("`                              Student Login                                      `");
