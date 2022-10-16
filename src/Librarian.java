@@ -1,4 +1,4 @@
-
+import java.util.Scanner;
 public class Librarian extends User implements Books{
     Librarian(){
         System.out.println("```````````````````````````````````````````````````````````````````````````````````");
@@ -7,7 +7,18 @@ public class Librarian extends User implements Books{
         setUserName("Admin");
         setPasswd("Admin");
         login();
-        books.put(1, "something");
+        
+    }
+    
+    void addBook(){
+        Scanner scn = new Scanner(System.in);
+        System.out.println("Enter Book name:");
+        String name = scn.nextLine();
+        System.out.println("Enter book code:");
+        int code = scn.nextInt();
+
+        books.put(code, name);
+        scn.close();
     }
 
 }
