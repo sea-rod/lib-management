@@ -1,26 +1,27 @@
 import java.util.Scanner;
+
 public class Login {
-    String name;
+    String username;
     String password;
 
-    void setPasswd(String pass){
+    void setPasswd(String pass) {
         password = pass;
     }
-    void setName(String n){
-        name = n;
-    }
 
-    boolean login(){
-        String n,pass;
-        Scanner scn = new Scanner(System.in);
-        System.out.println("Enter Your Name:");
-        n = scn.nextLine();
-        System.out.println("Enter your passsword:");
-        pass = scn.nextLine();
-        scn.close();
-        if (n == "admin" && pass == "admin")
-            return true;
-        else
-            return false;
+    void setUserName(String n) {
+        username = n;
     }
+    boolean login() {
+        Scanner scn = new Scanner(System.in);
+        System.out.println("Enter Your Username:");
+        String n = scn.nextLine();
+        System.out.println("Enter your Password:");
+        String pass = scn.nextLine();
+        scn.close();
+        if(n == username && password == pass)
+        return true;
+        else
+        return false;
+    }
+    
 }
