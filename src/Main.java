@@ -6,21 +6,22 @@ public class Main {
         Librarian l = new Librarian();
         Teacher t = new Teacher();
         Student s = new Student();
-        int ch;//TODO books
+        int ch;
         Books.initBooks();
         do {
             System.out.println("Login as: ");
             System.out.println("1.Librarian 2.Teacher 3.Student 0.Exit...");
             ch = scn.nextInt();
+            if(ch==0)break;
             switch (ch) {
                 case 1 -> {
-                    l.libMain();break;
+                    l.libMain();
                 }
                 case 2 -> {
-                    t.teachMain();break;
+                    t.teachMain();
                 }
                 case 3 -> {
-                    s.stuMain();break;
+                    s.stuMain();
                 }
                 default -> System.out.println("Invalid Value Entered");
             }
