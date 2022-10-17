@@ -1,5 +1,8 @@
-public class Teacher extends User {
+public class Teacher extends Utils {
     Teacher(){
+
+    }
+    void init(){
         System.out.println("```````````````````````````````````````````````````````````````````````````````````");
         System.out.println("`                              Teacher Login                                      `");
         System.out.println("```````````````````````````````````````````````````````````````````````````````````");
@@ -7,11 +10,9 @@ public class Teacher extends User {
         setPasswd("Teacher");
     }
     void teachMain() {
-        if  (login()){
-            System.out.println("Login Successful");
-        } else {
-            System.out.println("Login Failed ");
-        }
+        init();
+        boolean flag = login();
+        takeBook();
     }
     
 }

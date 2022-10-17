@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Login {
+public class Login extends Books {
     String username;
     String password;
 
@@ -15,7 +15,6 @@ public class Login {
         Scanner scn = new Scanner(System.in);
         System.out.println("Enter Your Username:");
         String n = scn.nextLine();
-        System.out.println(username);
         System.out.println("Enter your Password:");
         String pass = scn.nextLine();
         if(username.equals(n) && password.equals(pass)) {
