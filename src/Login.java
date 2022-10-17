@@ -15,8 +15,7 @@ public class Login extends Books {
         System.out.println("Enter Your Username:");
         String n = scn.next();
         System.out.println("Enter your Password:");
-        String pass = scn.nextLine();
-        // scn.close();
+        String pass = scn.next();
         if(username.equals(n) && password.equals(pass)) {
             System.out.println("Login Successful");
             return true;
