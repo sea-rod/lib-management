@@ -1,6 +1,6 @@
-import java.util.Scanner;
-public class Librarian extends User implements Books{
+public class Librarian extends LibrarianUtil{
     Librarian(){
+        super();
         System.out.println("```````````````````````````````````````````````````````````````````````````````````");
         System.out.println("`                              Librarian Login                                      `");
         System.out.println("```````````````````````````````````````````````````````````````````````````````````");
@@ -9,17 +9,7 @@ public class Librarian extends User implements Books{
         login();
         
     }
-    
-    void addBook(){
-        Scanner scn = new Scanner(System.in);
-        System.out.println("Enter Book name:");
-        String name = scn.nextLine();
-        System.out.println("Enter book code:");
-        int code = scn.nextInt();
 
-        books.put(code, name);
-        scn.close();
-    }
 
 }
 
