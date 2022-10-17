@@ -2,7 +2,11 @@ import java.util.Scanner;
 
 public class LibrarianUtil extends User implements Books  {
     LibrarianUtil(){
-        //add bboks
+        books.put(1, "Fifty Shades of Grey");
+        books.put(2, "The Subtle Art Of Not Giving A F*ck");
+        books.put(3, "Everything is F*cked");
+        books.put(4, "Harry Potter and The Philoshopher's Stone");
+        books.put(5, "Atomic Habits");
     }
         
     void addBook(){
