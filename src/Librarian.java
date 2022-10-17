@@ -6,8 +6,16 @@ public class Librarian extends LibrarianUtil{
         System.out.println("```````````````````````````````````````````````````````````````````````````````````");
         setUserName("Admin");
         setPasswd("Admin");
-        login();
-        
+    }
+    void libMain(){
+        if  (login()){
+            System.out.println("Login Successful");
+            int ch = 1;
+            switch (ch){
+                case 1:addBook();break;
+                case 2:removeBooks();break;
+            }
+        }
     }
 
 

@@ -5,7 +5,13 @@ public class Teacher extends User {
         System.out.println("```````````````````````````````````````````````````````````````````````````````````");
         setUserName("Teacher");
         setPasswd("Teacher");
-        login();
+    }
+    void teachMain() {
+        if  (login()){
+            System.out.println("Login Successful");
+        } else {
+            System.out.println("Login Failed ");
+        }
     }
     
 }

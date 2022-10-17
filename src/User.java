@@ -10,11 +10,10 @@ public class User extends Login {
             System.out.println("1.Teacher 2.Student 3.Librarian");
             user = scn.nextInt();
             switch(user) {
-                case 1: login();
-                break;
-                case 2: login();
-                break;
-                case 3: login();
+                case 1:
+                case 2:
+                case 3:
+                    login();
                 break;
                 default: System.out.println("Invalid Input.");
                 break;

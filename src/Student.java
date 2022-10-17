@@ -4,10 +4,14 @@ public class Student extends Utils {
         System.out.println("```````````````````````````````````````````````````````````````````````````````````");
         System.out.println("`                              Student Login                                      `");
         System.out.println("```````````````````````````````````````````````````````````````````````````````````");
-        setUserName("Student");
-        setPasswd("Student");
-        login();
+        setUserName("student");
+        setPasswd("student");
     }
-
-    
+    void stuMain(){
+        if  (login()){
+            System.out.println("Login Successful");
+        } else {
+            System.out.println("Login Failed");
+        }
+    }
 }

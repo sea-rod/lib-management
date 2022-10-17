@@ -15,13 +15,18 @@ public class Login {
         Scanner scn = new Scanner(System.in);
         System.out.println("Enter Your Username:");
         String n = scn.nextLine();
+        System.out.println(username);
         System.out.println("Enter your Password:");
         String pass = scn.nextLine();
-        scn.close();
-        if(n == username && password == pass)
-        return true;
-        else
-        return false;
+        if(username.equals(n) && password.equals(pass)) {
+            System.out.println("Login Successful");
+            return true;
+        }
+        else{
+            System.out.println("Login Failed");
+            System.out.println("Check Username and Password");
+            return false;
+        }
     }
-    
+
 }
