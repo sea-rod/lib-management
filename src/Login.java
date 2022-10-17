@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Login extends Books {
     String username;
     String password;
-
+    Scanner scn = new Scanner(System.in);
     void setPasswd(String pass) {
         password = pass;
     }
@@ -12,12 +12,11 @@ public class Login extends Books {
         username = n;
     }
     boolean login() {
-        Scanner scn = new Scanner(System.in);
         System.out.println("Enter Your Username:");
-        String n = scn.nextLine();
+        String n = scn.next();
         System.out.println("Enter your Password:");
         String pass = scn.nextLine();
-        scn.close();
+        // scn.close();
         if(username.equals(n) && password.equals(pass)) {
             System.out.println("Login Successful");
             return true;

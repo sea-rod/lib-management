@@ -1,7 +1,4 @@
-import java.util.Scanner;
-
 public class Utils extends Login implements Tracker{
-    Scanner scn = new Scanner(System.in);
     void takeBook(){
         displayBooks();
         System.out.println("Enter book code:");
@@ -16,6 +13,7 @@ public class Utils extends Login implements Tracker{
                 System.out.println("Please take the Book");//TODO statement later
                 rusers.put(roll,code);
                 takenBook.put(code,books.get(code));
+                libBookTakenList.putAll(takenBook);
                 books.remove(code);
             }
         }
