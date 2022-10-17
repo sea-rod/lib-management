@@ -1,3 +1,4 @@
 bin/
 .gitignore
-src/
+README.md
+.idea
