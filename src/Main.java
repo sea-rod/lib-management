@@ -12,6 +12,7 @@ public class Main {
             System.out.println("Login as: ");
             System.out.println("1.Librarian 2.Teacher 3.Student 0.Exit...");
             ch = scn.nextInt();
+            scn.nextLine();
             if(ch==0)break;
             switch (ch) {
                 case 1 -> {

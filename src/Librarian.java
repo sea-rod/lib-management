@@ -14,6 +14,7 @@ public class Librarian extends LibrarianUtil{
             System.out.println("What you want to do");
             System.out.println("1.Add book\n2.Remove book\n3.Display Books available\n4.Display books taken\n0.Back");
             int ch = scn.nextInt();
+            scn.nextLine();
             if(ch==0)break;
             switch (ch){
                 case 1:addBook();break;

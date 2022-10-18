@@ -3,9 +3,11 @@ public class Utils extends Login implements Tracker{
         displayBooks();
         System.out.println("Enter book code:");
         int code = scn.nextInt();
+        scn.nextLine();
         if(books.containsKey(code)){
             System.out.println("Enter your student ID or Teacher ID:");
             int roll = scn.nextInt();
+            scn.nextLine();
             if(rusers.containsKey(roll)){
                 System.out.println("Please the previous book you have taken");
             }
@@ -36,6 +38,7 @@ public class Utils extends Login implements Tracker{
         displayTakenBooks();
         System.out.println("Enter the book code your returning:");
         int code = scn.nextInt();
+        scn.nextLine();
         if (takenBook.containsKey(code)){
             books.put(code,takenBook.get(code));
             takenBook.remove(code);

@@ -1,15 +1,17 @@
 public class LibrarianUtil extends Login implements Tracker  {
     void addBook(){
         System.out.println("Enter Book name:");
-        String name = scn.next();
+        String name = scn.nextLine();
         System.out.println("Enter book code:");
         int code = scn.nextInt();
+        scn.nextLine();
         books.put(code, name);
     }
     
     void removeBooks(){
         System.out.println("Enter the book code:");
         int code = scn.nextInt();
+        scn.nextLine();
         books.remove(code);
     }
     void displayAvailBooks(){
