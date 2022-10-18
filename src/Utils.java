@@ -1,3 +1,5 @@
+import javax.rmi.ssl.SslRMIClientSocketFactory;
+
 public class Utils extends Login implements Tracker{
     void takeBook(){
         displayBooks();
@@ -27,12 +29,14 @@ public class Utils extends Login implements Tracker{
 
     void displayBooks(){
         System.out.println();
-        books.forEach((c,n)->System.out.println(c+" : "+n));
+        System.out.println(String.format("%-10s:name","Code"));
+        books.forEach((c,n)->System.out.println(String.format("%-10d:%s",c,n)));
     }
 
     void displayTakenBooks(){
         System.out.println();
-        takenBook.forEach((c,n)->System.out.println(c+" : "+n));
+        System.out.println(String.format("%-10s:name","Code")); 
+        takenBook.forEach((c,n)->System.out.println(String.format("%-10d:%s",c,n)));
     }
 
 

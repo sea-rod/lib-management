@@ -16,15 +16,15 @@ public class LibrarianUtil extends Login implements Tracker  {
     }
     void displayAvailBooks(){
         System.out.println();
-        System.out.println("Books Available");
-        books.forEach((code,name)-> System.out.println(code+" : "+name));
+        System.out.println("Books Available:-");
+        books.forEach((code,name)-> System.out.println(String.format("%10d:%s",code,name)));
     }
     void displayTakenBooks(){
         System.out.println("\nBook that are taken");
         System.out.println("Book taken by:Name of the book");
-        rusers.forEach((roll,code)->System.out.println(roll+"       :   "+libBookTakenList.get(code)));
+        rusers.forEach((roll,code)->System.out.println(String.format("%13d:%s",roll,libBookTakenList.get(code))));
 
     }
-
+  
 
 }
