@@ -11,7 +11,7 @@ public class Student extends Utils {
         init();
         boolean flag = login();
         while (flag) {
-            System.out.println("What would you like to do");
+            System.out.println("\nWhat would you like to do");
             System.out.println("1.Take Book\n2.Return Book\n3.Display books available\n0.Back\n");
             int ch = scn.nextInt();
             scn.nextLine();

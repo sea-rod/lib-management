@@ -17,11 +17,11 @@ public class Login extends Books {
         System.out.println("Enter your Password:");
         String pass = scn.nextLine();
         if(username.equals(n) && password.equals(pass)) {
-            System.out.println("Login Successful");
+            System.out.println("\nLogin Successful");
             return true;
         }
         else{
-            System.out.println("Login Failed");
+            System.out.println("\nLogin Failed");
             System.out.println("Check Username and Password");
             return false;
         }

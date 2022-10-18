@@ -26,10 +26,12 @@ public class Utils extends Login implements Tracker{
     }
 
     void displayBooks(){
+        System.out.println();
         books.forEach((c,n)->System.out.println(c+" : "+n));
     }
 
     void displayTakenBooks(){
+        System.out.println();
         takenBook.forEach((c,n)->System.out.println(c+" : "+n));
     }
 

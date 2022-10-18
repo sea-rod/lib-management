@@ -11,7 +11,7 @@ public class Librarian extends LibrarianUtil{
         init();
         Boolean flag = login();
         while(flag){
-            System.out.println("What you want to do");
+            System.out.println("\nWhat you want to do");
             System.out.println("1.Add book\n2.Remove book\n3.Display Books available\n4.Display books taken\n0.Back");
             int ch = scn.nextInt();
             scn.nextLine();

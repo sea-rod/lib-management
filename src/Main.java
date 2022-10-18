@@ -9,7 +9,7 @@ public class Main {
         int ch;
         Books.initBooks();
         do {
-            System.out.println("Login as: ");
+            System.out.println("\nLogin as: ");
             System.out.println("1.Librarian 2.Teacher 3.Student 0.Exit...");
             ch = scn.nextInt();
             scn.nextLine();
