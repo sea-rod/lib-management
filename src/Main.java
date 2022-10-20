@@ -7,6 +7,9 @@ public class Main {
         Teacher t = new Teacher();
         Student s = new Student();
         int ch;
+
+        Student.addUser(3, "44");
+
         Books.initBooks();
         do {
             System.out.println("\nLogin as: ");
