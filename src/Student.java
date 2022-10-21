@@ -1,4 +1,3 @@
-// import java.util.Scanner;
 public class Student extends Utils {
     void init(){
         System.out.println("```````````````````````````````````````````````````````````````````````````````````");
