@@ -16,11 +16,11 @@ public class Librarian extends LibrarianUtil{
             int ch = scn.nextInt();
             scn.nextLine();
             if(ch==0)break;
-            switch (ch){
-                case 1:addBook();break;
-                case 2:removeBooks();break;
-                case 3:displayAvailBooks();break;
-                case 4:displayTakenBooks();break;
+            switch (ch) {
+                case 1 -> addBook();
+                case 2 -> removeBooks();
+                case 3 -> displayAvailBooks();
+                case 4 -> displayTakenBooks();
             }
         }
     }

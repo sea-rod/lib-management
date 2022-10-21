@@ -26,7 +26,7 @@ public class Main {
                 }
                 default -> System.out.println("Invalid Value Entered");
             }
-        }while (ch != 0);
+        }while (true);
     }
     
 }

@@ -29,14 +29,14 @@ public class Utils extends Login implements Tracker{
 
     void displayBooks(){
         System.out.println();
-        System.out.println(String.format("%-10s:name","Code"));
-        books.forEach((c,n)->System.out.println(String.format("%-10d:%s",c,n)));
+        System.out.printf("%10s:name%n","Code");
+        books.forEach((c,n)->System.out.printf("%10d:%s%n",c,n));
     }
 
     void displayTakenBooks(){
         System.out.println();
-        System.out.println(String.format("%-10s:name","Code")); 
-        takenBook.forEach((c,n)->System.out.println(String.format("%-10d:%s",c,n)));
+        System.out.printf("%10s:name%n","Code");
+        takenBook.forEach((c,n)->System.out.printf("%10d:%s%n",c,n));
     }
 
 
