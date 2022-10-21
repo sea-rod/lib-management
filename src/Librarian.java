@@ -1,3 +1,5 @@
+import com.sun.jdi.event.ExceptionEvent;
+
 public class Librarian extends LibrarianUtil{
     void init(){
         System.out.println("```````````````````````````````````````````````````````````````````````````````````");
@@ -11,16 +13,22 @@ public class Librarian extends LibrarianUtil{
         init();
         Boolean flag = login();
         while(flag){
-            System.out.println("\nWhat you want to do");
-            System.out.println("1.Add book\n2.Remove book\n3.Display Books available\n4.Display books taken\n0.Back");
-            int ch = scn.nextInt();
-            scn.nextLine();
-            if(ch==0)break;
-            switch (ch){
-                case 1:addBook();break;
-                case 2:removeBooks();break;
-                case 3:displayAvailBooks();break;
-                case 4:displayTakenBooks();break;
+            try{
+                System.out.println("\nWhat you want to do");
+                System.out.println("1.Add book\n2.Remove book\n3.Display Books available\n4.Display books taken\n0.Back");
+                int ch = scn.nextInt();
+                scn.nextLine();
+                if(ch==0)break;
+                switch (ch) {
+                    case 1 -> addBook();
+                    case 2 -> removeBooks();
+                    case 3 -> displayAvailBooks();
+                    case 4 -> displayTakenBooks();
+                }
+            }
+            catch (Exception e) {
+                System.out.println(e +" Error occurred, Try Again ");
+                scn.nextLine();
             }
         }
     }
