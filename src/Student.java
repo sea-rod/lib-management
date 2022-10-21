@@ -11,17 +11,22 @@ public class Student extends Utils {
         init();
         boolean flag = login();
         while (flag) {
-            System.out.println("\nWhat would you like to do");
-            System.out.println("1.Take Book\n2.Return Book\n3.Display books available\n0.Back\n");
-            int ch = scn.nextInt();
-            scn.nextLine();
-            if(ch==0) break;
+            try {
+                System.out.println("\nWhat would you like to do");
+                System.out.println("1.Take Book\n2.Return Book\n3.Display books available\n0.Back\n");
+                int ch = scn.nextInt();
+                scn.nextLine();
+                if (ch == 0) break;
 
-            switch (ch) {
-                case 1 -> takeBook();
-                case 2 -> returnBook();
-                case 3 -> displayBooks();
-                default -> System.out.println("Invalid choice:");
+                switch (ch) {
+                    case 1 -> takeBook();
+                    case 2 -> returnBook();
+                    case 3 -> displayBooks();
+                    default -> System.out.println("Invalid choice:");
+                }
+            } catch (Exception e) {
+                System.out.println(e + " Error occurred, Try Again ");
+                scn.nextLine();
             }
         }
     }
