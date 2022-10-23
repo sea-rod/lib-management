@@ -1,16 +1,16 @@
 public class LibrarianUtil extends Login implements Tracker  {
     void addBook(){
-        System.out.println("Enter book code:");
+        System.out.println("Enter book Code:");
         int code = scn.nextInt();
         scn.nextLine();
-        System.out.println("\nEnter Book name:");
+        System.out.println("\nEnter Book Name:");
         String name = scn.nextLine();
         books.put(code, name);
     }
     
     void removeBooks(){
         displayAvailBooks();
-        System.out.println("\nEnter the book code:");
+        System.out.println("\nEnter Book Code:");
         int code = scn.nextInt();
         scn.nextLine();
         books.remove(code);
@@ -23,7 +23,7 @@ public class LibrarianUtil extends Login implements Tracker  {
     }
     void displayTakenBooks(){
         if(libBookTakenList.isEmpty()){
-            System.out.println("\nNo Book has Been Taken");
+            System.out.println("\nNo Books Are Taken");
         }
         else{
             System.out.println("\nBook That Are Taken");

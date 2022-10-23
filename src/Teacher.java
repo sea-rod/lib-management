@@ -6,8 +6,8 @@ public class Teacher extends Utils {
         System.out.println("```````````````````````````````````````````````````````````````````````````````````");
         System.out.println("`                              Teacher Login                                      `");
         System.out.println("```````````````````````````````````````````````````````````````````````````````````");
-        setUserName("Teacher");
-        setPasswd("Teacher");
+        setUserName("teacher");
+        setPasswd("teacher");
     }
     void teachMain() {
         init();
@@ -15,7 +15,7 @@ public class Teacher extends Utils {
         while (flag) {
             try {
                 System.out.println("\nWhat would you like to do");
-                System.out.println("1.Take Book\n2.Return Book\n3.Display Books available\n0.Back");
+                System.out.println("1.Take Book\n2.Return Book\n3.Display Books Available\n0.Back");
                 int ch = scn.nextInt();
                 scn.nextLine();
                 if (ch == 0) break;
@@ -28,7 +28,7 @@ public class Teacher extends Utils {
                 }
             }
             catch (Exception e) {
-                System.out.println(e + " Error occurred, Try Again ");
+                System.out.println(e + " Error Occurred, Try Again ");
                 scn.nextLine();
             }
         }

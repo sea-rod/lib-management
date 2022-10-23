@@ -1,18 +1,18 @@
 public class Utils extends Login implements Tracker{
     void takeBook(){
         displayBooks();
-        System.out.println("Enter book code:");
+        System.out.println("Enter Book Code:");
         int code = scn.nextInt();
         scn.nextLine();
         if(books.containsKey(code)){
-            System.out.println("Enter your student ID or Teacher ID:");
+            System.out.println("Enter Your Student ID or Teacher ID:");
             int roll = scn.nextInt();
             scn.nextLine();
             if(rusers.containsKey(roll)){
-                System.out.println("\nPlease Return the previous book you have taken");
+                System.out.println("\nPlease Return The Previous Book You Have Taken");
             }
             else{
-                System.out.println("Please take the Book");//TODO statement later
+                System.out.println("Please take the Book");
                 rusers.put(roll,code);
                 takenBook.put(code,books.get(code));
                 libBookTakenList.putAll(takenBook);
@@ -20,7 +20,7 @@ public class Utils extends Login implements Tracker{
             }
         }
         else{
-            System.out.println("Book does not exsit or it isnt available");
+            System.out.println("Book Does Not Exsit Or It Isnt Available");
         }
 
     }

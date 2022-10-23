@@ -3,8 +3,8 @@ public class Librarian extends LibrarianUtil{
         System.out.println("```````````````````````````````````````````````````````````````````````````````````");
         System.out.println("`                              Librarian Login                                    `");
         System.out.println("```````````````````````````````````````````````````````````````````````````````````");
-        setUserName("Admin");
-        setPasswd("Admin");
+        setUserName("admin");
+        setPasswd("admin");
 
     }
     void libMain(){
@@ -25,7 +25,7 @@ public class Librarian extends LibrarianUtil{
                 }
             }
             catch (Exception e) {
-                System.out.println(e +" Error occurred, Try Again ");
+                System.out.println(e +" Error Occurred, Try Again ");
                 scn.nextLine();
             }
         }

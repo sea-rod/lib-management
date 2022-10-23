@@ -27,7 +27,7 @@ public class Main {
                 }
             }
             catch (Exception e) {
-                System.out.println(e + " Error occurred, Try Again ");
+                System.out.println(e + " Error Occurred, Try Again ");
                 scn.nextLine();
             }
         }while (true);

@@ -15,7 +15,7 @@ public class Login extends Books {
     boolean login() {
         System.out.println("Enter Your Username:");
         String n = scn.nextLine();
-        System.out.println("Enter your Password:");
+        System.out.println("Enter Your Password:");
         String pass = scn.nextLine();
         if(username.equals(n) && password.equals(pass)) {
             System.out.println("\nLogin Successful");
@@ -23,7 +23,7 @@ public class Login extends Books {
         }
         else{
             System.out.println("\nLogin Failed");
-            System.out.println("Check Username and Password");
+            System.out.println("Check Username And Password");
             return false;
         }
     }
