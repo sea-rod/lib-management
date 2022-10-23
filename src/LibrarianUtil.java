@@ -24,7 +24,13 @@ public class LibrarianUtil extends Login implements Tracker  {
         System.out.println("\nEnter Book Code:");
         int code = scn.nextInt();
         scn.nextLine();
-        books.remove(code);
+        if(!books.containsKey(code)) {
+            System.out.println("\nCannot remove a book that doesn't exist");
+        } else {
+            books.remove(code);
+            System.out.println("\nBook removed successfully");
+
+        }
     }
 
     /**
