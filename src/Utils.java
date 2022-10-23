@@ -26,7 +26,6 @@ public class Utils extends Login implements Tracker{
         else{
             System.out.println("Book does not exist or isn't available");
         }
-
     }
 
     /**
