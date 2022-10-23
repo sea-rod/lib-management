@@ -73,6 +73,7 @@ public class Utils extends Login implements Tracker{
             books.put(code,takenBook.get(code));
             takenBook.remove(code);
             rusers.remove(roll);
+            libBookTakenList.remove(code);
         }
         else{
             System.out.println("No Book With That Code");

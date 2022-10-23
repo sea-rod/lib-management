@@ -6,7 +6,7 @@ public class LibrarianUtil extends Login implements Tracker  {
         System.out.println("Enter book Code:");
         int code = scn.nextInt();
         scn.nextLine();
-        if(books.containsKey(code)){
+        if(books.containsKey(code) || libBookTakenList.containsKey(code)){
             System.out.println("\nBook With That Code Already Exist");
         }
         else{
