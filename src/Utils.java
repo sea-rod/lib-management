@@ -9,14 +9,14 @@ public class Utils extends Login implements Tracker{
         int code = scn.nextInt();
         scn.nextLine();
         if(books.containsKey(code)){
-            System.out.println("Enter Your Student ID or Teacher ID:");
+            System.out.println("Enter Your ID:");
             int roll = scn.nextInt();
             scn.nextLine();
             if(rusers.containsKey(roll)){
                 System.out.println("\nPlease Return The Previous Book You Have Taken");
             }
             else{
-                System.out.println("Please take the Book");
+                System.out.println("Collect your book");
                 rusers.put(roll,code);
                 takenBook.put(code,books.get(code));
                 libBookTakenList.putAll(takenBook);
@@ -24,7 +24,7 @@ public class Utils extends Login implements Tracker{
             }
         }
         else{
-            System.out.println("Book Does Not Exsit Or It Isnt Available");
+            System.out.println("Book does not exist or isn't available");
         }
 
     }
@@ -55,7 +55,7 @@ public class Utils extends Login implements Tracker{
      */
     public int returnBook() {
         if(takenBook.isEmpty()){
-            System.out.println("No Books Are Taken");
+            System.out.println("No books are taken");
             return 1;
         }
         displayTakenBooks();
@@ -63,11 +63,11 @@ public class Utils extends Login implements Tracker{
         int code = scn.nextInt();
         scn.nextLine();
         if (takenBook.containsKey(code)){
-            System.out.println("Enter Your Student ID or Teacher ID:");
+            System.out.println("Enter Your ID:");
             int roll = scn.nextInt();
             scn.nextLine();
             if(!rusers.containsKey(roll) || code != rusers.get(roll)){
-                System.out.println("\nYou Cannot Return A Book You Haven't Taken");
+                System.out.println("\nBook return unsuccessful, check ID and book code");
                 return 1;
             }
             books.put(code,takenBook.get(code));
