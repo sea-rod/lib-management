@@ -1,6 +1,4 @@
 import java.util.Scanner;
-
-
 public class Login extends Books {
     private String username;
     private String password;
@@ -8,14 +6,14 @@ public class Login extends Books {
 
     /**
      * Sets the password for the user
-     * @param pass The to be set for the user
+     * @param pass The password to be set for the user
      */
     void setPasswd(String pass) {
         password = pass;
     }
 
     /**
-     * Set the username for the user
+     * Sets the username for the user
      * @param n The username to be set for the user
      */
     void setUserName(String n) {

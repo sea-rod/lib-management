@@ -1,7 +1,7 @@
 public class Utils extends Login implements Tracker{
     /**
      * This method is called when a user takes a book
-     * It remove the book from the book list and adds to the taken book list
+     * It removes the book from the book list and adds to the taken book list
      */
     void takeBook(){
         displayBooks();
@@ -51,7 +51,7 @@ public class Utils extends Login implements Tracker{
     /**
      * This method is called when the user returns the book
      * It removes the book from the taken book list and adds it back to the book list
-     * @return It return 1 if no books are return else it returns 0
+     * @return It returns 1 if no books are return else it returns 0
      */
     public int returnBook() {
         if(takenBook.isEmpty()){

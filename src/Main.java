@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         System.out.println("```````````````````````````````````````````````````````````````````````````````````");
-        System.out.println("`                        Welcome To Libary Management System                      `");
+        System.out.println("`                        Welcome To Library Management System                      `");
         System.out.println("```````````````````````````````````````````````````````````````````````````````````");
         Scanner scn = new Scanner(System.in);
         Librarian l = new Librarian();

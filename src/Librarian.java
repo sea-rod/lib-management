@@ -11,11 +11,11 @@ public class Librarian extends LibrarianUtil{
     }
 
     /**
-     * Displays the functions that a librairain can perform
+     * Displays the functions that a librarian can perform
      */
     void libMain(){
         init();
-        Boolean flag = login();
+        boolean flag = login();
         while(flag){
             try{
                 System.out.println("\nWhat you want to do");
