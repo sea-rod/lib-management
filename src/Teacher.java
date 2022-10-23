@@ -15,7 +15,7 @@ public class Teacher extends Utils {
         while (flag) {
             try {
                 System.out.println("\nWhat would you like to do");
-                System.out.println("1.Take Book\n2.Return Book\n3.Display Books available\n0.Back\n");
+                System.out.println("1.Take Book\n2.Return Book\n3.Display Books available\n0.Back");
                 int ch = scn.nextInt();
                 scn.nextLine();
                 if (ch == 0) break;

@@ -1,9 +1,7 @@
-import com.sun.jdi.event.ExceptionEvent;
-
 public class Librarian extends LibrarianUtil{
     void init(){
         System.out.println("```````````````````````````````````````````````````````````````````````````````````");
-        System.out.println("`                              Librarian Login                                      `");
+        System.out.println("`                              Librarian Login                                    `");
         System.out.println("```````````````````````````````````````````````````````````````````````````````````");
         setUserName("Admin");
         setPasswd("Admin");
