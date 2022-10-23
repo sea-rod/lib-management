@@ -3,5 +3,5 @@ bin/
 README.md
 .idea
 res/User.txt
-.lib-management.iml
+lib-management.iml
 out/
