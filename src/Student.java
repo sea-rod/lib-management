@@ -1,3 +1,5 @@
+import java.util.InputMismatchException;
+
 public class Student extends Utils {
     void init(){
         System.out.println("```````````````````````````````````````````````````````````````````````````````````");
@@ -25,11 +27,17 @@ public class Student extends Utils {
                     case 1 -> takeBook();
                     case 2 -> returnBook();
                     case 3 -> displayBooks();
-                    default -> System.out.println("Invalid choice:");
+                    default -> System.out.println("Invalid choice");
                 }
-            } catch (Exception e) {
-                System.out.println(e + " Error Occurred, Try Again ");
+            } 
+            catch (InputMismatchException e) {
+                System.out.println();
+                System.out.println("Invalid Input, Try Again ");
                 scn.nextLine();
+            }
+            catch (Exception e){
+                System.out.println();
+                System.out.println(e + " Error Occurred, Try again");
             }
         }
     }

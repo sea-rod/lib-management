@@ -1,3 +1,5 @@
+import java.util.InputMismatchException;
+
 public class Librarian extends LibrarianUtil{
     void init(){
         System.out.println("```````````````````````````````````````````````````````````````````````````````````");
@@ -26,11 +28,17 @@ public class Librarian extends LibrarianUtil{
                     case 2 -> removeBooks();
                     case 3 -> displayAvailBooks();
                     case 4 -> displayTakenBooks();
+                    default -> System.out.println("Invalid Choice");
                 }
             }
-            catch (Exception e) {
-                System.out.println(e +" Error Occurred, Try Again ");
+            catch (InputMismatchException e) {
+                System.out.println();
+                System.out.println("Invalid Input, Try Again ");
                 scn.nextLine();
+            }
+            catch (Exception e){
+                System.out.println();
+                System.out.println(e + " Error Occurred, Try again");
             }
         }
     }

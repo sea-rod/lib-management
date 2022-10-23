@@ -63,7 +63,7 @@ public class Utils extends Login implements Tracker{
         int code = scn.nextInt();
         scn.nextLine();
         if (takenBook.containsKey(code)){
-            System.out.println("Enter Your Roll No:");
+            System.out.println("Enter Your Student ID or Teacher ID:");
             int roll = scn.nextInt();
             scn.nextLine();
             if(!rusers.containsKey(roll) || code != rusers.get(roll)){

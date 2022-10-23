@@ -1,3 +1,4 @@
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Main {
@@ -26,9 +27,14 @@ public class Main {
                     default -> System.out.println("Invalid Value Entered");
                 }
             }
-            catch (Exception e) {
-                System.out.println(e + " Error Occurred, Try Again ");
+            catch (InputMismatchException e) {
+                System.out.println();
+                System.out.println("Invalid Input, Try Again ");
                 scn.nextLine();
+            }
+            catch (Exception e){
+                System.out.println();
+                System.out.println(e + " Error Occurred, Try again");
             }
         }while (true);
     }

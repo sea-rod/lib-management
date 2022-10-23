@@ -41,7 +41,7 @@ public class LibrarianUtil extends Login implements Tracker  {
         }
         else{
             System.out.println("\nBook That Are Taken");
-            System.out.println("Book Taken By: Name Of The Book");
+            System.out.println("Book Taken By : Name Of The Book");
             rusers.forEach((roll,code)->System.out.printf("%-13d : %s%n",roll,libBookTakenList.get(code)));
         }
 
