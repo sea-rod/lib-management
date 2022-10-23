@@ -1,7 +1,7 @@
 import java.util.HashMap;
 public class Books {
-    static HashMap<Integer, String> books = new HashMap<>();
-    HashMap<Integer,String> takenBook = new HashMap<>();
+    static HashMap<Integer, String> books = new HashMap<>(); // Contains the list of books available
+    HashMap<Integer,String> takenBook = new HashMap<>(); // Contains the list of books taken by the user
 
     static void initBooks(){
         books.put(1, "Harry Potter and the Philosopher's stone");

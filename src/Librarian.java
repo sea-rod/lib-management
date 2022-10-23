@@ -7,6 +7,10 @@ public class Librarian extends LibrarianUtil{
         setPasswd("admin");
 
     }
+
+    /**
+     * Displays the functions that a librairain can perform
+     */
     void libMain(){
         init();
         Boolean flag = login();

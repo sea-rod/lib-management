@@ -1,4 +1,8 @@
 public class Utils extends Login implements Tracker{
+    /**
+     * This method is called when a user takes a book
+     * It remove the book from the book list and adds to the taken book list
+     */
     void takeBook(){
         displayBooks();
         System.out.println("Enter Book Code:");
@@ -25,12 +29,18 @@ public class Utils extends Login implements Tracker{
 
     }
 
+    /**
+     * Displays the book available
+     */
     void displayBooks(){
         System.out.println();
         System.out.printf("%-10s: Name%n","Code");
         books.forEach((c,n)->System.out.printf("%-10d: %s%n",c,n));
     }
 
+    /**
+     * Displays books that are taken
+     */
     void displayTakenBooks(){
         System.out.println();
         System.out.printf("%-10s: Name%n","Code");
@@ -38,6 +48,11 @@ public class Utils extends Login implements Tracker{
     }
 
 
+    /**
+     * This method is called when the user returns the book
+     * It removes the book from the taken book list and adds it back to the book list
+     * @return It return 1 if no books are return else it returns 0
+     */
     public int returnBook() {
         if(takenBook.isEmpty()){
             System.out.println("No Books Are Taken");

@@ -1,7 +1,4 @@
 public class Teacher extends Utils {
-    Teacher(){
-
-    }
     void init(){
         System.out.println("```````````````````````````````````````````````````````````````````````````````````");
         System.out.println("`                              Teacher Login                                      `");
@@ -9,6 +6,10 @@ public class Teacher extends Utils {
         setUserName("teacher");
         setPasswd("teacher");
     }
+    
+    /**
+     * Displays the function that the teacher can perform
+     */
     void teachMain() {
         init();
         boolean flag = login();

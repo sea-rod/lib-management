@@ -2,13 +2,22 @@ import java.util.Scanner;
 
 
 public class Login extends Books {
-    String username;
-    String password;
-    Scanner scn = new Scanner(System.in);
+    private String username;
+    private String password;
+    Scanner scn = new Scanner(System.in); 
+
+    /**
+     * Sets the password for the user
+     * @param pass The to be set for the user
+     */
     void setPasswd(String pass) {
         password = pass;
     }
 
+    /**
+     * Set the username for the user
+     * @param n The username to be set for the user
+     */
     void setUserName(String n) {
         username = n;
     }

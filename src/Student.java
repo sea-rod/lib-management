@@ -6,6 +6,10 @@ public class Student extends Utils {
         setUserName("student");
         setPasswd("student");
     }
+
+    /**
+     * Displays the functions that the student can perform
+     */
     void stuMain(){
         init();
         boolean flag = login();
